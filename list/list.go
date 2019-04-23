@@ -58,7 +58,7 @@ func DeleteNode(n *Node,i int) (res int,err error) {
 			n.data[k-1] = n.data[k]
 		}
 	}
-	n.data[n.lens] = 0
+	n.data[n.lens-1] = 0
 	n.lens--
 	return res,nil
 }

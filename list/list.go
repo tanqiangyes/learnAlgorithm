@@ -71,6 +71,8 @@ type PtrNode struct {
 }
 
 //获取元素，链式结构线性表
-func GetPtrNode(n *PtrNode)  {
-
-}
+// n PtrNode结构
+// i 获取位置
+//func GetPtrNode(n *PtrNode,i int) (res int,err error) {
+//
+//}

@@ -5,6 +5,7 @@ import "errors"
 
 const  MAXSIZE = 20
 
+//线性表得顺序实现
 type Node struct {
 	data [MAXSIZE]int
 	lens int
@@ -13,7 +14,7 @@ type Node struct {
 //获取线性表元素
 // n Node结构
 // i 获取位置
-func GetNodeData(n Node,i int) (res int,err error)  {
+func GetNodeData(n *Node,i int) (res int,err error)  {
 	if n.lens == 0 || i > n.lens {
 		return 0,errors.New("i error")
 	}
@@ -63,7 +64,13 @@ func DeleteNode(n *Node,i int) (res int,err error) {
 	return res,nil
 }
 
+//线性表得链式实现
 type PtrNode struct {
 	data int
 	next *PtrNode
+}
+
+//获取元素，链式结构线性表
+func GetPtrNode(n *PtrNode)  {
+
 }

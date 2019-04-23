@@ -52,7 +52,7 @@ func DeleteNode(n *Node,i int) (res int,err error) {
 	if i > n.lens || i < 1 {
 		return 0,errors.New("i error")
 	}
-	res = n.data[i]
+	res = n.data[i-1]
 	if i < n.lens {
 		for k := i;k < n.lens ; k++ {
 			n.data[k-1] = n.data[k]

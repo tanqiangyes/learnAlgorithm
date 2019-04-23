@@ -15,6 +15,6 @@ func main() {
 	fmt.Println(list.GetNodeData(node,3))
 	fmt.Println(node)
 
-	fmt.Println(list.DeleteNode(&node,3))
+	fmt.Println(list.DeleteNode(&node,4))
 	fmt.Println(node)
 }

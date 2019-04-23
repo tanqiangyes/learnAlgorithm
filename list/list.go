@@ -17,7 +17,7 @@ func GetNodeData(n Node,i int) (res int,err error)  {
 	if n.lens == 0 || i > n.lens {
 		return 0,errors.New("i error")
 	}
-	res = n.data[i]
+	res = n.data[i-1]
 	return res,nil
 }
 
